@@ -1,4 +1,4 @@
-package edu.hsai.hw2;
+package edu.hsai.hw21;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
