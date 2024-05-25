@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -16,7 +16,7 @@
     </properties>
 
     <dependencies>
-<!--        IMPORTANT: JUnit5 is supported by MVN 3.0.0.M7-->
+        <!--        IMPORTANT: JUnit5 is supported by MVN 3.0.0.M7-->
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
@@ -45,10 +45,8 @@
             <scope>system</scope>
             <systemPath>${project.basedir}/calculator-1.0.jar</systemPath>
         </dependency>
-
-
-
     </dependencies>
+
     <build>
         <pluginManagement>
             <plugins>
