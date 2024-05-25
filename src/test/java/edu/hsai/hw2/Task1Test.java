@@ -1,4 +1,4 @@
-package edu.hsai.hw21;
+package edu.hsai.hw2;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
@@ -6,7 +6,7 @@ import org.testng.asserts.SoftAssert;
 import org.openqa.selenium.WebElement;
 import java.util.List;
 
-public class Task1Test extends DriverSetup {
+class Task1Test extends DriverSetup {
     @Test
     public void testTask1() {
         SoftAssert softAssert = new SoftAssert();

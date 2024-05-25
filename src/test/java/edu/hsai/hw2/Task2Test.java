@@ -1,4 +1,4 @@
-package edu.hsai.hw21;
+package edu.hsai.hw2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class Task2Test extends DriverSetup {
+class Task2Test extends DriverSetup {
     @Test
     public void testBrowserTitle() {
         // 2. Assert browser title
