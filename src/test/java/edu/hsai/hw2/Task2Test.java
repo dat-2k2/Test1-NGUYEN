@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.testng.Assert.*;
 
-public class Task2Test extends DriverSetup {
+class Task2Test extends DriverSetup {
     @Test
     public void testBrowserTitle() {
         // 2. Assert browser title
