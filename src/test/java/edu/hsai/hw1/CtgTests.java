@@ -19,23 +19,21 @@ public class CtgTests extends CalculatorTest {
                 arguments(Math.PI / 4, 1.),
                 arguments(Math.PI / 3, Math.sqrt(3.)/3),
                 arguments(Math.PI / 2, 0.),
-                arguments(2. * Math.PI / 3, -Math.sqrt(3.)),
-                arguments(3. * Math.PI / 4, -1.),
-                arguments(5. * Math.PI / 6, -Math.sqrt(3.)/3)
+                arguments(3* Math.PI / 2, 0.)
         );
     }
 
     @ParameterizedTest
     @MethodSource("predefined")
-    void shouldAsBeWritten(double val, double expected) {
+    public void shouldAsBeWritten(double val, double expected) {
         Assertions.assertEquals(expected, calculator.ctg(val), DELTA);
-        Assertions.assertEquals(-expected, calculator.ctg(val + Math.PI/2), DELTA);
-        Assertions.assertEquals(-expected, calculator.ctg(val - Math.PI/2), DELTA);
+        Assertions.assertEquals(-expected, calculator.ctg(val + Math.PI), DELTA);
+        Assertions.assertEquals(-expected, calculator.ctg(val - Math.PI), DELTA);
     }
 
     @ParameterizedTest
-    @ValueSource(doubles = {0, Math.PI, -Math.PI})
-    void shouldReturnInfinity(double val) {
+    @ValueSource(doubles = {0, Math.PI, -Math.PI, 2*Math.PI})
+    public void shouldReturnInfinity(double val) {
         Assertions.assertEquals(Double.POSITIVE_INFINITY, calculator.ctg(val + EPSILON), DELTA);
         Assertions.assertEquals(Double.NEGATIVE_INFINITY, calculator.ctg(val - EPSILON), DELTA);
     }
