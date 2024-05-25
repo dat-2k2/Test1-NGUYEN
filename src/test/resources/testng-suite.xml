@@ -3,6 +3,7 @@
     <test name="WebDriver tests">
         <packages>
             <package name="edu.hsai.hw2"/>
+            <package name="edu.hsai.hw3"/>
         </packages>
     </test>
 </suite>
