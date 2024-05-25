@@ -3,7 +3,7 @@ package edu.hsai.hw3;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class Task1Test extends DriverSetup {
+class Task1Test extends DriverSetup {
     @Test
     public void testTask1() {
         var softAssert = new SoftAssert();

@@ -2,7 +2,7 @@ package edu.hsai.hw3;
 
 import java.util.List;
 
-public interface Expected {
+interface Expected {
     String SITE_NAME = "Home Page";
     String LOGGED_USER_NAME = "ROMAN IOVLEV";
     int HEADER_SECTION_ITEMS_SIZE = 4;

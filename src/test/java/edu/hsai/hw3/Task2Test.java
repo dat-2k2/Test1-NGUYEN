@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 
-public class Task2Test extends DriverSetup {
+class Task2Test extends DriverSetup {
     @Test
     public void testBrowserTitle() {
         // 2. Assert browser title
