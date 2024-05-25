@@ -1,4 +1,4 @@
-package edu.hsai.hw2;
+package edu.hsai.hw3;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
