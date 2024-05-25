@@ -1,4 +1,4 @@
-package edu.hsai.autotests;
+package edu.hsai.hw1;
 
 public class Main {
     public static void main(String[] args) {

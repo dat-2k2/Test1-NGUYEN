@@ -1,4 +1,4 @@
-package edu.hsai.autotests;
+package edu.hsai.hw1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

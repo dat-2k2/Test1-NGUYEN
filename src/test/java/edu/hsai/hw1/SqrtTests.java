@@ -1,4 +1,4 @@
-package edu.hsai.autotests;
+package edu.hsai.hw1;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

@@ -1,4 +1,4 @@
-package edu.hsai.autotests;
+package edu.hsai.hw1;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -17,11 +17,11 @@ public class CtgTests extends CalculatorTest {
         return Stream.of(
                 arguments(Math.PI / 6, Math.sqrt(3.)),
                 arguments(Math.PI / 4, 1.),
-                arguments(Math.PI / 3, Math.sqrt(3.) / 3.),
+                arguments(Math.PI / 3, Math.sqrt(3.)/3),
                 arguments(Math.PI / 2, 0.),
-                arguments(2. * Math.PI / 3, -Math.sqrt(3.) / 3.),
+                arguments(2. * Math.PI / 3, -Math.sqrt(3.)),
                 arguments(3. * Math.PI / 4, -1.),
-                arguments(5. * Math.PI / 6, -Math.sqrt(3.))
+                arguments(5. * Math.PI / 6, -Math.sqrt(3.)/3)
         );
     }
 
@@ -29,8 +29,8 @@ public class CtgTests extends CalculatorTest {
     @MethodSource("predefined")
     void shouldAsBeWritten(double val, double expected) {
         Assertions.assertEquals(expected, calculator.ctg(val), DELTA);
-        Assertions.assertEquals(expected, calculator.ctg(val + Math.PI), DELTA);
-        Assertions.assertEquals(expected, calculator.ctg(val - Math.PI), DELTA);
+        Assertions.assertEquals(-expected, calculator.ctg(val + Math.PI/2), DELTA);
+        Assertions.assertEquals(-expected, calculator.ctg(val - Math.PI/2), DELTA);
     }
 
     @ParameterizedTest
