@@ -1,4 +1,4 @@
-package edu.hsai.hw3;
+package edu.hsai.hw2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,16 +6,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
+import java.util.Properties;
+
 class DriverSetup {
     protected static WebDriver driver;
 
+
     @BeforeTest
     public void setup() {
+
+        var properties = new Properties();
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 
+
         driver = new ChromeDriver();
-//        driver.manage().window().maximize();
 
         // 1. Open test site by URL
         driver.navigate().to("https://jdi-testing.github.io/jdi-light/index.html");
