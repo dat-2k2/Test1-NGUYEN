@@ -1,6 +1,6 @@
-package edu.hsai.hw3.pages.others;
+package edu.hsai.hw4.pages.others;
 
-import edu.hsai.hw3.pages.home.HomePage;
+import edu.hsai.hw4.pages.home.HomePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

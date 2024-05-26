@@ -1,8 +1,8 @@
-package edu.hsai.hw3.pages.home;
+package edu.hsai.hw4.pages.home;
 
-import edu.hsai.hw3.pages.home.elements.HeaderSection;
-import edu.hsai.hw3.pages.home.elements.IFrame;
-import edu.hsai.hw3.pages.home.elements.LeftSection;
+import edu.hsai.hw4.pages.home.elements.HeaderSection;
+import edu.hsai.hw4.pages.home.elements.IFrame;
+import edu.hsai.hw4.pages.home.elements.LeftSection;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +12,6 @@ import java.util.List;
 
 public class HomePage {
     private final WebDriver driver;
-
     private final HeaderSection headerSection;
     private final LeftSection leftSection;
 
