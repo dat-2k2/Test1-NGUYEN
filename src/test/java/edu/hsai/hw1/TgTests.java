@@ -41,7 +41,7 @@ public class TgTests extends CalculatorTest {
     @ParameterizedTest
     @ValueSource(doubles = {Math.PI/2, -Math.PI/2, 3*Math.PI/2})
     public void shouldReturnInfinity(double val) {
-        Assertions.assertEquals(Double.POSITIVE_INFINITY, calculator.tg(val + EPSILON), DELTA);
-        Assertions.assertEquals(Double.NEGATIVE_INFINITY, calculator.tg(val + EPSILON), DELTA);
+        Assertions.assertEquals(Double.POSITIVE_INFINITY, calculator.tg(val), DELTA);
+        Assertions.assertEquals(Double.NEGATIVE_INFINITY, calculator.tg(val), DELTA);
     }
 }
