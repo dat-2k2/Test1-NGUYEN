@@ -14,8 +14,6 @@ class DriverSetup {
 
     @BeforeTest
     public void setup() {
-
-        var properties = new Properties();
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 
