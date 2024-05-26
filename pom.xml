@@ -30,6 +30,7 @@
     </profiles>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
@@ -40,6 +41,7 @@
             <artifactId>slf4j-simple</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -58,6 +60,7 @@
             <version>1.0.2</version>
             <scope>test</scope>
         </dependency>
+
         <!-- https://mvnrepository.com/artifact/io.github.cdimascio/dotenv-java -->
         <dependency>
             <groupId>io.github.cdimascio</groupId>
@@ -69,7 +72,6 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>2.27.0</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -101,7 +103,6 @@
                         <testFailureIgnore>false</testFailureIgnore>
                     </configuration>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>
