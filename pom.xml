@@ -18,7 +18,7 @@
 
     <profiles>
         <profile>
-            <id>hw4-suite</id>
+            <id>hw2-suite</id>
             <properties>
                     <testng.suite.file>${project.build.testOutputDirectory}/testng-suite.xml</testng.suite.file>
             </properties>

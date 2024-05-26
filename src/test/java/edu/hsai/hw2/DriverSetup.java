@@ -15,8 +15,6 @@ class DriverSetup {
         System.setProperty("webdriver.http.factory", "jdk-http-client");
 
         driver = new ChromeDriver();
-//        driver.manage().window().maximize();
-
         // 1. Open test site by URL
         driver.navigate().to("https://jdi-testing.github.io/jdi-light/index.html");
 
