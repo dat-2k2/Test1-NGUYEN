@@ -1,34 +1,31 @@
-package edu.hsai.hw4;
+package edu.hsai.hw2;
 
-import edu.hsai.hw4.steps.Action;
-import edu.hsai.hw4.steps.Assertion;
-import io.github.cdimascio.dotenv.Dotenv;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
-class DriverSetup {
+public class DriverSetup {
     protected static WebDriver driver;
-    protected static Action action;
-    protected static Assertion assertion;
 
     @BeforeTest
     public void setup() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         System.setProperty("webdriver.http.factory", "jdk-http-client");
-        Dotenv dotenv = Dotenv.configure().load();
 
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        action = new Action(driver, dotenv);
-        assertion = new Assertion(driver, dotenv);
+//        driver.manage().window().maximize();
 
         // 1. Open test site by URL
-        action.navigateToHomePage();
+        driver.navigate().to("https://jdi-testing.github.io/jdi-light/index.html");
 
         // 3. Perform login
-        action.performLogin();
+        driver.findElement(By.cssSelector("html > body > header > div > nav > ul.uui-navigation.navbar-nav.navbar-right > li > a > span"))
+                .click();
+        driver.findElement(By.id("name")).sendKeys("Roman");
+        driver.findElement(By.id("password")).sendKeys("Jdi1234");
+        driver.findElement(By.id("login-button")).click();
     }
 
     @AfterTest
