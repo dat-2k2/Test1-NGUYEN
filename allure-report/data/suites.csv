@@ -1,3 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon May 27 03:44:50 MSK 2024","Mon May 27 03:44:51 MSK 2024","658","testng-suite","WebDriver tests","edu.hsai.hw4.Task1Test","edu.hsai.hw4.Task1Test","testTask1","testTask1",""
-"passed","Mon May 27 03:44:52 MSK 2024","Mon May 27 03:44:54 MSK 2024","2176","testng-suite","WebDriver tests","edu.hsai.hw4.Task2Test","edu.hsai.hw4.Task2Test","testTask2","testTask2",""
+"failed","Mon May 27 04:05:51 MSK 2024","Mon May 27 04:05:51 MSK 2024","20","testng-suite","WebDriver tests","edu.hsai.hw4.BadTest","edu.hsai.hw4.BadTest","testFailSiteName","testFailSiteName",""
+"passed","Mon May 27 04:05:52 MSK 2024","Mon May 27 04:05:53 MSK 2024","884","testng-suite","WebDriver tests","edu.hsai.hw4.Task2Test","edu.hsai.hw4.Task2Test","testTask2","testTask2",""
+"passed","Mon May 27 04:05:51 MSK 2024","Mon May 27 04:05:52 MSK 2024","417","testng-suite","WebDriver tests","edu.hsai.hw4.Task1Test","edu.hsai.hw4.Task1Test","testTask1","testTask1",""

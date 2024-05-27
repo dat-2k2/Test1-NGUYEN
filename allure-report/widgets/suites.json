@@ -1,1 +1,1 @@
-{"total":1,"items":[{"uid":"04a612ee0b7f5c73fafd2fdf038cd8de","name":"testng-suite","statistic":{"failed":0,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":2}}]}
+{"total":1,"items":[{"uid":"04a612ee0b7f5c73fafd2fdf038cd8de","name":"testng-suite","statistic":{"failed":1,"broken":0,"skipped":0,"passed":2,"unknown":0,"total":3}}]}
